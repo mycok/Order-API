@@ -6,12 +6,16 @@
     "outDir": "dist",
     "baseUrl": "src",
     "strict": true,
+    "declaration": false,
+    "pretty": true,
+    "allowSyntheticDefaultImports": true,
     "lib": ["ES6", "DOM"],
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "moduleResolution": "node"
   },
   "types": [
     "node",

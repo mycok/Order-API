@@ -1,0 +1,7 @@
+{
+    "express": {
+        "port": 8081,
+        "host": "order-api"
+    },
+    "loglevel": "info"
+}

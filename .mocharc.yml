@@ -13,5 +13,5 @@ require:
 watch-files:
   - test/**/*.spec.ts
 timeout: 35000
-
+exit: true
 
