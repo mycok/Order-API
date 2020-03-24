@@ -1,0 +1,17 @@
+color: true
+diff: true
+extension:
+  - ts
+spec: 
+  - test/**/*.spec.ts
+ignore:
+  - node_modules/**
+recursive: true
+require:
+  - ts-node/register
+  - source-map-support/register
+watch-files:
+  - test/**/*.spec.ts
+timeout: 35000
+
+
