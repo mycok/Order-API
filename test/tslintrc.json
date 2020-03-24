@@ -1,0 +1,25 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint-config-airbnb",
+        "tslint-config-prettier"
+    ],
+    "overrides": [
+        {
+            "files": ["*.spec.ts"],
+            "env": {
+                "mocha": true
+            },
+            "rules": {
+                "func-names": "off",
+                "prefer-arrow-callback": "off"
+            }
+        }
+    ],
+    "jsRules": {},
+    "rules": {
+        "prefer-array-literal": false,
+        "variable-name": false
+    },
+    "rulesDirectory": []
+}

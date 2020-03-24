@@ -1,1 +1,3 @@
-export { Queue } from './Queue';
+import { Server } from './config/Server';
+
+export default new Server();
