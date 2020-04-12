@@ -11,7 +11,7 @@
     "lint": "tslint ./src/**/*.ts ./test/**/*.spec.ts",
     "lint:fix": "tslint --fix ./src/**/*.ts ./test/**/*.spec.ts -t verbose",
     "pre-test": "cross-env NODE_ENV=test yarn run build && yarn run lint",
-    "test": "mocha",
+    "test": "cross-env NODE_ENV=test mocha",
     "coverage": "nyc mocha",
     "test:coverage": "yarn run coverage"
   },

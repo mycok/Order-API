@@ -3,6 +3,8 @@ import cors from 'cors';
 import helmet from 'helmet';
 
 import { router } from '../routes';
+import { userRouter } from '../routes/User';
+import { orderRouter } from '../routes/Order';
 
 export class ExpressConfig {
     app: express.Express;
@@ -22,7 +24,9 @@ export class ExpressConfig {
     }
 
     private routesSetup() {
-        this.app.use(router)
+        this.app.use(router);
+        this.app.use(userRouter);
+        this.app.use(orderRouter);
     }
 
     private clientErrorHandler(err: any, req: Request, res: Response, next: Function): void {
